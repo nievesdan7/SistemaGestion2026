@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMUsuarioLista));
             this.DTG_Lista = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,14 +64,14 @@
             // 
             this.DTG_Lista.AllowUserToAddRows = false;
             this.DTG_Lista.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTG_Lista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTG_Lista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DTG_Lista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DTG_Lista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -79,31 +79,31 @@
             this.Column3,
             this.Nombre_Completo,
             this.Login});
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DTG_Lista.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DTG_Lista.DefaultCellStyle = dataGridViewCellStyle3;
             this.DTG_Lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DTG_Lista.EnableHeadersVisualStyles = false;
-            this.DTG_Lista.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.DTG_Lista.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(157)))));
             this.DTG_Lista.Location = new System.Drawing.Point(72, 99);
             this.DTG_Lista.MultiSelect = false;
             this.DTG_Lista.Name = "DTG_Lista";
             this.DTG_Lista.ReadOnly = true;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTG_Lista.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTG_Lista.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DTG_Lista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DTG_Lista.Size = new System.Drawing.Size(723, 375);
+            this.DTG_Lista.Size = new System.Drawing.Size(722, 343);
             this.DTG_Lista.TabIndex = 19;
             this.DTG_Lista.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTG_Lista_CellDoubleClick);
             // 
@@ -119,8 +119,8 @@
             this.Column2.Checked = true;
             this.Column2.CheckState = System.Windows.Forms.CheckState.Indeterminate;
             this.Column2.CheckValue = null;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column2.HeaderText = "Estado";
             this.Column2.MinimumWidth = 60;
             this.Column2.Name = "Column2";
@@ -164,18 +164,15 @@
             this.EPN_Filtrar.Location = new System.Drawing.Point(72, 0);
             this.EPN_Filtrar.Name = "EPN_Filtrar";
             this.EPN_Filtrar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.EPN_Filtrar.Size = new System.Drawing.Size(723, 99);
+            this.EPN_Filtrar.Size = new System.Drawing.Size(722, 99);
             this.EPN_Filtrar.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.EPN_Filtrar.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.EPN_Filtrar.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.EPN_Filtrar.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.EPN_Filtrar.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
             this.EPN_Filtrar.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
             this.EPN_Filtrar.Style.GradientAngle = 90;
             this.EPN_Filtrar.TabIndex = 18;
             this.EPN_Filtrar.TitleStyle.Alignment = System.Drawing.StringAlignment.Center;
             this.EPN_Filtrar.TitleStyle.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.EPN_Filtrar.TitleStyle.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.EPN_Filtrar.TitleStyle.Border = DevComponents.DotNetBar.eBorderType.RaisedInner;
             this.EPN_Filtrar.TitleStyle.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
             this.EPN_Filtrar.TitleStyle.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
@@ -199,12 +196,15 @@
             // 
             // TXT_Filtrar
             // 
+            this.TXT_Filtrar.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.TXT_Filtrar.Border.Class = "TextBoxBorder";
             this.TXT_Filtrar.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.TXT_Filtrar.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.TXT_Filtrar.DisabledBackColor = System.Drawing.Color.White;
+            this.TXT_Filtrar.ForeColor = System.Drawing.Color.Black;
             this.TXT_Filtrar.Location = new System.Drawing.Point(92, 50);
             this.TXT_Filtrar.Name = "TXT_Filtrar";
             this.TXT_Filtrar.PreventEnterBeep = true;
@@ -246,18 +246,15 @@
             this.EPN_Opciones.HideControlsWhenCollapsed = true;
             this.EPN_Opciones.Location = new System.Drawing.Point(0, 0);
             this.EPN_Opciones.Name = "EPN_Opciones";
-            this.EPN_Opciones.Size = new System.Drawing.Size(72, 474);
+            this.EPN_Opciones.Size = new System.Drawing.Size(72, 442);
             this.EPN_Opciones.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.EPN_Opciones.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.EPN_Opciones.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.EPN_Opciones.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.EPN_Opciones.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
             this.EPN_Opciones.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
             this.EPN_Opciones.Style.GradientAngle = 90;
             this.EPN_Opciones.TabIndex = 17;
             this.EPN_Opciones.TitleStyle.Alignment = System.Drawing.StringAlignment.Center;
             this.EPN_Opciones.TitleStyle.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.EPN_Opciones.TitleStyle.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.EPN_Opciones.TitleStyle.Border = DevComponents.DotNetBar.eBorderType.RaisedInner;
             this.EPN_Opciones.TitleStyle.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
             this.EPN_Opciones.TitleStyle.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
@@ -278,6 +275,7 @@
             this.BTN_Password.Size = new System.Drawing.Size(72, 81);
             this.BTN_Password.TabIndex = 7;
             this.BTN_Password.Text = "&Contraseña";
+            this.BTN_Password.Click += new System.EventHandler(this.BTN_Password_Click);
             // 
             // BTN_Reporte
             // 
@@ -293,7 +291,6 @@
             this.BTN_Reporte.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.BTN_Reporte.TabIndex = 6;
             this.BTN_Reporte.Text = "Reporte";
-         
             // 
             // BTN_Modificar
             // 
@@ -340,7 +337,7 @@
             // modificarToolStripMenuItem
             // 
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.modificarToolStripMenuItem.Text = "&Modificar";
             this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
             // 
@@ -354,7 +351,7 @@
             // habilitarToolStripMenuItem
             // 
             this.habilitarToolStripMenuItem.Name = "habilitarToolStripMenuItem";
-            this.habilitarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.habilitarToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.habilitarToolStripMenuItem.Text = "&Habilitar";
             this.habilitarToolStripMenuItem.Click += new System.EventHandler(this.habilitarToolStripMenuItem_Click);
             // 
@@ -362,7 +359,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(795, 474);
+            this.ClientSize = new System.Drawing.Size(794, 442);
+            this.ControlBox = false;
             this.Controls.Add(this.DTG_Lista);
             this.Controls.Add(this.EPN_Filtrar);
             this.Controls.Add(this.EPN_Opciones);

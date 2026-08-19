@@ -476,7 +476,7 @@
             this.PCB_Camara.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PCB_Camara.TabIndex = 0;
             this.PCB_Camara.TabStop = false;
-            
+            this.PCB_Camara.LoadCompleted += new System.ComponentModel.AsyncCompletedEventHandler(this.PCB_Camara_LoadCompleted);
             // 
             // BTN_Limpiar
             // 

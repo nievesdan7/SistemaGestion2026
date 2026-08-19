@@ -16,7 +16,7 @@ namespace Eithan_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FRM_Producto_Buscar());
+            Application.Run(new FRM_Principal());
         }
     }
 }

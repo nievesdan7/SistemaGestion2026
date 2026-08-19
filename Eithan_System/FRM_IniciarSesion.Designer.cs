@@ -168,6 +168,7 @@
             this.Name = "FRM_IniciarSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar Sesión";
+           
             this.GP_Panel_Usuario.ResumeLayout(false);
             this.ResumeLayout(false);
 

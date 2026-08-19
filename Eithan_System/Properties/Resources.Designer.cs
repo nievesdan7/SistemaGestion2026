@@ -113,6 +113,16 @@ namespace Eithan_System.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ico_okey2 {
+            get {
+                object obj = ResourceManager.GetObject("ico_okey2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icono_buscar {
             get {
                 object obj = ResourceManager.GetObject("icono-buscar", resourceCulture);
@@ -233,9 +243,79 @@ namespace Eithan_System.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_huella_dactilar_100__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-huella-dactilar-100 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_huella_dactilar_100__2_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-huella-dactilar-100 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_huella_dactilar_1001 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-huella-dactilar-1001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_ingresar_67 {
             get {
                 object obj = ResourceManager.GetObject("icons8-ingresar-67", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_producto_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-producto-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_producto_48__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-producto-48 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_producto_48__2_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-producto-48 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_producto_48__3_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-producto-48 (3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

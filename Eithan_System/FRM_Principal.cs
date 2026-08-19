@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Eithan_System
 {
-    public partial class FRM_Principal : DevComponents.DotNetBar.Office2007Form
+    public partial class FRM_Principal : Form
     {
 
         public aususis usuario = new aususis();
@@ -33,6 +33,7 @@ namespace Eithan_System
             }
             FRM_Fondo1 a = new FRM_Fondo1();
             a.MdiParent = this;
+            a.Dock = DockStyle.Fill;
             a.Show();
             BTNActualizarPassword.Enabled = false;
             BTNCerrarSesion.Enabled = false;
@@ -40,6 +41,8 @@ namespace Eithan_System
             RBPAdministracion.Enabled = false;
             BTNLogin.Enabled = true;
             BTN_LoginHuella.Enabled = true;
+
+            timer1.Enabled = false;
         }
 
         private void Estado_2()
@@ -50,6 +53,7 @@ namespace Eithan_System
             }
             FRM_Fondo2 a = new FRM_Fondo2();
             a.MdiParent = this;
+            a.Dock = DockStyle.Fill;
             a.persona = this.persona;
             a.usuario = this.usuario;
             a.Show();
@@ -59,6 +63,12 @@ namespace Eithan_System
             RBPAdministracion.Enabled = true;
             BTNLogin.Enabled = false;
             BTN_LoginHuella.Enabled = false;
+
+            timer1.Enabled = true;
+            lblUsuario.Text = "Usuario: " +
+                            persona.capsapepat + " " +
+                            persona.capsapemat + " " +
+                            persona.capsnomper;
         }
 
         #endregion
@@ -80,6 +90,7 @@ namespace Eithan_System
             }
             FRM_Persona_Lista a = new FRM_Persona_Lista();
             a.MdiParent = this;
+            a.Dock = DockStyle.Fill;
             a.Show();
         }
 
@@ -91,6 +102,7 @@ namespace Eithan_System
             }
             FRMUsuarioLista a = new FRMUsuarioLista();
             a.MdiParent = this;
+            a.Dock = DockStyle.Fill;
             a.Show();
         }
 
@@ -104,9 +116,7 @@ namespace Eithan_System
                 b.persona = a.persona;
                 b.ShowDialog();
             }
-            if (a.login_exitoso) {
-                MessageBox.Show("Bienvenido al sistema "+a.persona.capsnomper,"Validacion",MessageBoxButtons.OK,MessageBoxIcon.Warning);
-            }
+            
             if (a.login_exitoso)
             {
                 this.persona = a.persona;
@@ -120,13 +130,12 @@ namespace Eithan_System
             FRM_Iniciar_Sesion_Huella a = new FRM_Iniciar_Sesion_Huella();
             a.ShowDialog();
             if(a.login_exitoso) {
-                
+                /*MessageBox.Show("Bienvenido al sistema " + a.persona.capsnomper, "Validacion", MessageBoxButtons.OK, MessageBoxIcon.Information);*/
                 this.persona = a.persona;
                 this.usuario = a.usuario;
                 Estado_2();
             }
         }
-        #endregion
 
         private void BTNCerrarSesion_Click(object sender, EventArgs e)
         {
@@ -138,5 +147,26 @@ namespace Eithan_System
                 Estado_1();
             }
         }
+
+        private void BTN_Productos_Click(object sender, EventArgs e)
+        {
+            foreach (Form s in this.MdiChildren)
+            {
+                s.Close();
+            }
+            FRM_Producto_Lista a = new FRM_Producto_Lista();
+            a.MdiParent = this;
+            a.Dock = DockStyle.Fill;
+            a.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblFechaHora.Text = "Fecha y Hora: "+DateTime.Now.ToString("F");
+        }
+
+        #endregion
+
+       
     }
 }

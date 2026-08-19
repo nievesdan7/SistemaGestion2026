@@ -1,5 +1,4 @@
-﻿using DevComponents.DotNetBar;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -208,77 +207,58 @@ namespace Eithan_System
 
         #region Validacion de contraseñas
 
-        public static int Puntuar_Clave(string clave)
-        {
-            int num = 0;
-
-            if (clave.Length >= 8)
-            {
-                num += 1;
-            }
-            if (clave.Any(char.IsLower))
-            {
-                num += 1;
-            }
-            if (clave.Any(char.IsUpper))
-            {
-                num += 1;
-            }
-            if (clave.Any(char.IsDigit))
-            {
-                num += 1;
-            }
-            if (clave.Any(ch => !char.IsLetterOrDigit(ch)))
-            {
-                num += 1;
-            }
-            return num;
-        }
-
-        public static void Validar_Clave(int num, LabelX label)
+        public static int ValidarPassword(String password)
         {
 
-            switch (num)
+            if (password.Length >= 8)
             {
-                case 0:
-                    label.Text = "Seguridad de contraseña: INADMISIBLE";
-                    label.ForeColor = ColorTranslator.FromHtml("#D32F2F");
-                    label.BackColor = ColorTranslator.FromHtml("#FFEBEE");
-                    label.BackgroundStyle.BorderColor = ColorTranslator.FromHtml("#D32F2F");
-                    break;
-                case 1:
-                    label.Text = "Seguridad de contraseña: MUY BAJA";
-                    label.ForeColor = ColorTranslator.FromHtml("#D32F2F");
-                    label.BackColor = ColorTranslator.FromHtml("#FFEBEE");
-                    label.BackgroundStyle.BorderColor = ColorTranslator.FromHtml("#D32F2F");
-                    break;
-                case 2:
-                    label.Text = "Seguridad de contraseña: BAJA";
-                    label.ForeColor = ColorTranslator.FromHtml("#D32F2F");
-                    label.BackColor = ColorTranslator.FromHtml("#FFEBEE");
-                    label.BackgroundStyle.BorderColor = ColorTranslator.FromHtml("#D32F2F");
-                    break;
-                case 3:
-                    label.Text = "Seguridad de contraseña: MEDIA";
-                    label.ForeColor = ColorTranslator.FromHtml("#E65100");
-                    label.BackColor = ColorTranslator.FromHtml("#FFF3E0");
-                    label.BackgroundStyle.BorderColor = ColorTranslator.FromHtml("#E65100");
-                    break;
-                case 4:
-                    label.Text = "Seguridad de contraseña: ALTA";
-                    label.ForeColor = ColorTranslator.FromHtml("#2E7D32");
-                    label.BackColor = ColorTranslator.FromHtml("#E8F5E9");
-                    label.BackgroundStyle.BorderColor = ColorTranslator.FromHtml("#2E7D32");
-                    break;
-                case 5:
-                    label.Text = "Seguridad de contraseña: MUY ALTA";
-                    label.ForeColor = ColorTranslator.FromHtml("#1565C0");
-                    label.BackColor = ColorTranslator.FromHtml("#E3F2FD");
-                    label.BackgroundStyle.BorderColor = ColorTranslator.FromHtml("#1565C0");
-                    break;
+
+
+                bool numero = password.Any(char.IsDigit);
+                bool mayuscula = password.Any(char.IsUpper);
+                bool minuscula = password.Any(char.IsLower);
+                bool caracterEspecial = password.Any(c => !char.IsLetterOrDigit(c));
+
+                int cont = 0;
+
+                bool[] vec = { numero, mayuscula, minuscula, caracterEspecial };
+
+                foreach (bool a in vec)
+                {
+                    if (a)
+                    {
+                        cont++;
+                    }
+                }
+
+                if (cont == 4)
+                {
+                    return 3;
+                }
+                else
+                {
+                    if (cont >= 2)
+                    {
+                        return 2;
+                    }
+                    else
+                    {
+                        return 1;
+                    }
+                }
+
             }
+            else
+            {
+                return 0;
+            }
+
+
+
+
+
         }
-        
+
         #endregion
-        }
+    }
 }

@@ -117,17 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="GP_Panel_Usuario.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="BTNPassword.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>149, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BTNPassword.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAACtpJREFUeF7tW/tTVOcZtpfJTKe3md77D7TT/tDfmszYH5Kmyi6kQAwXa6Ix1aRF
+        DgAACw4BQL7hQQAACtpJREFUeF7tW/tTVOcZtpfJTKe3md77D7TT/tDfmszYH5Kmyi6kQAwXa6Ix1aRF
         jWnVXJwIkonoRFsvjZdkWZQqmUY2UUgiILuri4ConRK51hsaFOWqgIT7Zd++z7ffty5wkHN2F4R6npl3
         OLPnnPf73ofv8l6+M8eECRMmTJgwYcKECRMmTJgwYcLEwwSHI+GR4/aIRwvTLauc6ZZ/FtotRSxVLDdZ
         eqXgGr8VOe3WzEKbdaXLZv013pVqHi7k77f+kMn4M5PmZtIGmBQKSvjdQrvVxfInj+33P5Dq/z/Bo+Vr
@@ -176,15 +170,6 @@
         z/fEMw/7J/8mTJgwYcKECRMmTJgwYcKECRMPKebM+R8XYRWHAje/rwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="TXT_Password.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>258, 17</value>
-  </metadata>
-  <metadata name="TXT_Login.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>370, 17</value>
-  </metadata>
-  <metadata name="BTN_Cancelar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>462, 17</value>
-  </metadata>
   <data name="BTN_Cancelar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -205,13 +190,10 @@
         FEVRFEVRFEVRHJbV6h9oM8PvwXi9iAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="BTN_Ingresar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>572, 17</value>
-  </metadata>
   <data name="BTN_Ingresar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEMAAABDCAYAAADHyrhzAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAABjNJREFUeF7tXGloXFUUHvcF3BXcoKLVlmTeTEJE61rFHy6oKBJEkaJC3ZO595lS
+        DgAACw4BQL7hQQAABjNJREFUeF7tXGloXFUUHvcF3BXcoKLVlmTeTEJE61rFHy6oKBJEkaJC3ZO595lS
         9UdTUcQfVVx+pegPFQUTFJcWdyMqNZn3XqI1oFaLFS2ltopLY622xu+8OWaZObO9Zea+wQ8+pkzuOfec
         886799xlmvofTUDatRdmPX1DxlUPZlw9ZLk6bzl6g+WozRlH/YzPrfh+I+ihzVrLVY9kHX0r2i1aPNy/
         L6tJJuYN9x+Y8exr4eRzvsOungpO9RuCsibt6Ls6xnqO4S7MRyZvd+JJr8aT/UV2LBwRlL+QUa9ZefvK
@@ -241,7 +223,4 @@
         gg==
 </value>
   </data>
-  <metadata name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

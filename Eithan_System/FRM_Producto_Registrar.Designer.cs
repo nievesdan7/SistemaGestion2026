@@ -88,7 +88,7 @@
             this.GP_Panel_Producto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GP_Panel_Producto.Location = new System.Drawing.Point(0, 0);
             this.GP_Panel_Producto.Name = "GP_Panel_Producto";
-            this.GP_Panel_Producto.Size = new System.Drawing.Size(671, 470);
+            this.GP_Panel_Producto.Size = new System.Drawing.Size(671, 455);
             // 
             // 
             // 
@@ -223,7 +223,7 @@
             this.TXT_Descripcion.Multiline = true;
             this.TXT_Descripcion.Name = "TXT_Descripcion";
             this.TXT_Descripcion.PreventEnterBeep = true;
-            this.TXT_Descripcion.Size = new System.Drawing.Size(296, 81);
+            this.TXT_Descripcion.Size = new System.Drawing.Size(647, 81);
             this.TXT_Descripcion.TabIndex = 18;
             this.TXT_Descripcion.WatermarkText = "Descripción";
             // 
@@ -299,7 +299,7 @@
             this.GP_Fotografia.DisabledBackColor = System.Drawing.Color.Empty;
             this.GP_Fotografia.Location = new System.Drawing.Point(311, 6);
             this.GP_Fotografia.Name = "GP_Fotografia";
-            this.GP_Fotografia.Size = new System.Drawing.Size(345, 255);
+            this.GP_Fotografia.Size = new System.Drawing.Size(345, 281);
             // 
             // 
             // 
@@ -339,7 +339,7 @@
             this.BTN_AbrirFoto.ImageFixedSize = new System.Drawing.Size(30, 30);
             this.BTN_AbrirFoto.Location = new System.Drawing.Point(239, 191);
             this.BTN_AbrirFoto.Name = "BTN_AbrirFoto";
-            this.BTN_AbrirFoto.Size = new System.Drawing.Size(80, 26);
+            this.BTN_AbrirFoto.Size = new System.Drawing.Size(80, 40);
             this.BTN_AbrirFoto.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.BTN_AbrirFoto.TabIndex = 2;
             this.BTN_AbrirFoto.Text = "&Abrir";
@@ -351,9 +351,9 @@
             this.BTN_LimpiarFoto.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.BTN_LimpiarFoto.Image = ((System.Drawing.Image)(resources.GetObject("BTN_LimpiarFoto.Image")));
             this.BTN_LimpiarFoto.ImageFixedSize = new System.Drawing.Size(30, 30);
-            this.BTN_LimpiarFoto.Location = new System.Drawing.Point(122, 191);
+            this.BTN_LimpiarFoto.Location = new System.Drawing.Point(125, 191);
             this.BTN_LimpiarFoto.Name = "BTN_LimpiarFoto";
-            this.BTN_LimpiarFoto.Size = new System.Drawing.Size(91, 26);
+            this.BTN_LimpiarFoto.Size = new System.Drawing.Size(91, 40);
             this.BTN_LimpiarFoto.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.BTN_LimpiarFoto.TabIndex = 1;
             this.BTN_LimpiarFoto.Text = "L&impiar";
@@ -366,7 +366,7 @@
             this.BTN_CapturarFoto.ImageFixedSize = new System.Drawing.Size(30, 30);
             this.BTN_CapturarFoto.Location = new System.Drawing.Point(11, 191);
             this.BTN_CapturarFoto.Name = "BTN_CapturarFoto";
-            this.BTN_CapturarFoto.Size = new System.Drawing.Size(90, 26);
+            this.BTN_CapturarFoto.Size = new System.Drawing.Size(90, 40);
             this.BTN_CapturarFoto.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.BTN_CapturarFoto.TabIndex = 0;
             this.BTN_CapturarFoto.Text = "C&apturar";
@@ -398,7 +398,7 @@
             this.BTN_Salir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BTN_Salir.Image = ((System.Drawing.Image)(resources.GetObject("BTN_Salir.Image")));
             this.BTN_Salir.ImageFixedSize = new System.Drawing.Size(30, 30);
-            this.BTN_Salir.Location = new System.Drawing.Point(584, 393);
+            this.BTN_Salir.Location = new System.Drawing.Point(584, 380);
             this.BTN_Salir.Name = "BTN_Salir";
             this.BTN_Salir.Size = new System.Drawing.Size(72, 44);
             this.BTN_Salir.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -412,7 +412,7 @@
             this.BTN_Limpiar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.BTN_Limpiar.Image = ((System.Drawing.Image)(resources.GetObject("BTN_Limpiar.Image")));
             this.BTN_Limpiar.ImageFixedSize = new System.Drawing.Size(30, 30);
-            this.BTN_Limpiar.Location = new System.Drawing.Point(224, 393);
+            this.BTN_Limpiar.Location = new System.Drawing.Point(224, 380);
             this.BTN_Limpiar.Name = "BTN_Limpiar";
             this.BTN_Limpiar.Size = new System.Drawing.Size(81, 44);
             this.BTN_Limpiar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -425,7 +425,7 @@
             this.BTN_Grabar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.BTN_Grabar.Image = ((System.Drawing.Image)(resources.GetObject("BTN_Grabar.Image")));
             this.BTN_Grabar.ImageFixedSize = new System.Drawing.Size(30, 30);
-            this.BTN_Grabar.Location = new System.Drawing.Point(9, 393);
+            this.BTN_Grabar.Location = new System.Drawing.Point(9, 380);
             this.BTN_Grabar.Name = "BTN_Grabar";
             this.BTN_Grabar.Size = new System.Drawing.Size(82, 44);
             this.BTN_Grabar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -493,7 +493,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.BTN_Salir;
-            this.ClientSize = new System.Drawing.Size(671, 470);
+            this.ClientSize = new System.Drawing.Size(671, 455);
             this.Controls.Add(this.GP_Panel_Producto);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

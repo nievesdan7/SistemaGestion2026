@@ -115,6 +115,7 @@ namespace Eithan_System
             SWB_Estado.Value = true;
             TXT_CI.Text = "";
         }
+
         private void JalarDatos()
         {
             persona.papscodper = this.codPerMod;
@@ -171,11 +172,15 @@ namespace Eithan_System
             }
 
         }
+
+        
+
         private void TXT_CI_Enter(object sender, EventArgs e)
         {
             TextBox a = (TextBox)sender;
             a.SelectAll();
         }
+
         private void FRMPersona_Registrar_Load(object sender, EventArgs e)
         {
             IniciarCamara();
@@ -196,6 +201,104 @@ namespace Eithan_System
                 TXT_CI.Focus();
             }
         }
+
+        private void TXT_Celular_KeyDown(object sender, KeyEventArgs e)
+        {
+            bool tecla_valida = false;
+            //Identificar si es una tecla válida
+            if ((e.KeyCode >= Keys.NumPad0) && (e.KeyCode <= Keys.NumPad9))
+                tecla_valida = true;
+            else if ((e.KeyCode >= Keys.D0) && (e.KeyCode <= Keys.D9) && !e.Shift)
+                tecla_valida = true;
+            else if ((e.KeyCode == Keys.Back) ||
+                (e.KeyCode == Keys.Delete) ||
+                (e.KeyCode == Keys.Left) ||
+                (e.KeyCode == Keys.Right) )
+                tecla_valida = true;
+            if (!tecla_valida)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void TXT_CI_KeyDown(object sender, KeyEventArgs e)
+        {
+            bool tecla_valida = false;
+            //Identificar si es una tecla válida
+            if ((e.KeyCode >= Keys.NumPad0) && (e.KeyCode <= Keys.NumPad9))
+                tecla_valida = true;
+            else if ((e.KeyCode >= Keys.D0) && (e.KeyCode <= Keys.D9) && !e.Shift)
+                tecla_valida = true;
+            else if ((e.KeyCode == Keys.Subtract) ||
+                (e.KeyCode == Keys.Back) ||
+                (e.KeyCode == Keys.Delete) ||
+                (e.KeyCode == Keys.Left) ||
+                (e.KeyCode == Keys.Right) ||
+                ((e.KeyCode == Keys.OemMinus) && !e.Shift))
+                tecla_valida = true;
+            if (!tecla_valida)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+        private void TXT_Direccion_KeyDown(object sender, KeyEventArgs e)
+        {
+            bool tecla_valida = true;
+            if (!tecla_valida)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void TXT_Correo_KeyDown(object sender, KeyEventArgs e)
+        {
+            bool tecla_valida = false;
+            if (e.KeyCode >= Keys.A && e.KeyCode <= Keys.Z)
+                tecla_valida = true;
+            else if ((e.KeyCode >= Keys.NumPad0) && (e.KeyCode <= Keys.NumPad9))
+                tecla_valida = true;
+            else if ((e.KeyCode >= Keys.D0) && (e.KeyCode <= Keys.D9) && (!e.Shift || (e.Shift && e.KeyCode == Keys.D2)))
+                tecla_valida = true;
+            else if ((e.KeyCode == Keys.Back) ||
+                     (e.KeyCode == Keys.Delete) ||
+                     (e.KeyCode == Keys.Left) ||
+                     (e.KeyCode == Keys.Right) ||
+                     (e.KeyCode == Keys.Add) ||
+                     (e.KeyCode == Keys.OemPeriod) ||
+                     (e.KeyCode == Keys.Decimal) ||
+                     (e.KeyCode == Keys.OemMinus) ||
+                     (e.KeyCode == Keys.Subtract) )
+            {
+                tecla_valida = true;
+            }
+            else if (e.Control && e.Alt && (e.KeyCode == Keys.Q || e.KeyCode == Keys.D2))
+                tecla_valida = true;
+            if (!tecla_valida)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void TXT_Nombres_KeyDown(object sender, KeyEventArgs e)
+        {
+            bool tecla_valida = false;
+            //Identificar si es una tecla válida
+            if ((e.KeyCode >= Keys.A) && (e.KeyCode <= Keys.Z) && (!e.Alt))
+                tecla_valida = true;
+            else if ((e.KeyCode == Keys.Subtract) ||
+                (e.KeyCode == Keys.Back) ||
+                (e.KeyCode == Keys.Delete) ||
+                (e.KeyCode == Keys.Left) ||
+                (e.KeyCode == Keys.Right) ||
+                ((e.KeyCode == Keys.OemMinus) && !e.Shift) ||
+                ((e.KeyCode == Keys.Oem4) && !e.Shift))
+                tecla_valida = true;
+            if (!tecla_valida)
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
+
         private void BTN_Grabar_Click(object sender, EventArgs e)
         {
             if (VerificarIntegridad())
@@ -208,7 +311,7 @@ namespace Eithan_System
                     correlativo.pxnctipcor = "aperson";
                     if (correlativo.ObtenerSiguiente())
                     {
-                        persona.papscodper = correlativo.pxnctipcor + "-" + correlativo.cxncnumcor.ToString("D12");
+                        persona.papscodper = correlativo.pxnctipcor+"-"+correlativo.cxncnumcor.ToString("D12");
                     }
                 }
                 else
@@ -226,7 +329,7 @@ namespace Eithan_System
                 persona.capsnumcel = TXT_Celular.Text;
                 persona.capscorele = TXT_Correo.Text;
                 persona.capsdirper = TXT_Direccion.Text;
-
+                
 
 
                 //Fotografia del producto
@@ -289,100 +392,6 @@ namespace Eithan_System
             }
         }
 
-
-        private void TXT_Celular_KeyDown(object sender, KeyEventArgs e)
-        {
-            bool tecla_valida = false;
-            //Identificar si es una tecla válida
-            if ((e.KeyCode >= Keys.NumPad0) && (e.KeyCode <= Keys.NumPad9))
-                tecla_valida = true;
-            else if ((e.KeyCode >= Keys.D0) && (e.KeyCode <= Keys.D9) && !e.Shift)
-                tecla_valida = true;
-            else if ((e.KeyCode == Keys.Back) ||
-                (e.KeyCode == Keys.Delete) ||
-                (e.KeyCode == Keys.Left) ||
-                (e.KeyCode == Keys.Right) )
-                tecla_valida = true;
-            if (!tecla_valida)
-            {
-                e.SuppressKeyPress = true;
-            }
-        }
-        private void TXT_CI_KeyDown(object sender, KeyEventArgs e)
-        {
-            bool tecla_valida = false;
-            //Identificar si es una tecla válida
-            if ((e.KeyCode >= Keys.NumPad0) && (e.KeyCode <= Keys.NumPad9))
-                tecla_valida = true;
-            else if ((e.KeyCode >= Keys.D0) && (e.KeyCode <= Keys.D9) && !e.Shift)
-                tecla_valida = true;
-            else if ((e.KeyCode == Keys.Subtract) ||
-                (e.KeyCode == Keys.Back) ||
-                (e.KeyCode == Keys.Delete) ||
-                (e.KeyCode == Keys.Left) ||
-                (e.KeyCode == Keys.Right) ||
-                ((e.KeyCode == Keys.OemMinus) && !e.Shift))
-                tecla_valida = true;
-            if (!tecla_valida)
-            {
-                e.SuppressKeyPress = true;
-            }
-        }
-        private void TXT_Direccion_KeyDown(object sender, KeyEventArgs e)
-        {
-            bool tecla_valida = true;
-            if (!tecla_valida)
-            {
-                e.SuppressKeyPress = true;
-            }
-        }
-        private void TXT_Correo_KeyDown(object sender, KeyEventArgs e)
-        {
-            bool tecla_valida = false;
-            if (e.KeyCode >= Keys.A && e.KeyCode <= Keys.Z)
-                tecla_valida = true;
-            else if ((e.KeyCode >= Keys.NumPad0) && (e.KeyCode <= Keys.NumPad9))
-                tecla_valida = true;
-            else if ((e.KeyCode >= Keys.D0) && (e.KeyCode <= Keys.D9) && (!e.Shift || (e.Shift && e.KeyCode == Keys.D2)))
-                tecla_valida = true;
-            else if ((e.KeyCode == Keys.Back) ||
-                     (e.KeyCode == Keys.Delete) ||
-                     (e.KeyCode == Keys.Left) ||
-                     (e.KeyCode == Keys.Right) ||
-                     (e.KeyCode == Keys.Add) ||
-                     (e.KeyCode == Keys.OemPeriod) ||
-                     (e.KeyCode == Keys.Decimal) ||
-                     (e.KeyCode == Keys.OemMinus) ||
-                     (e.KeyCode == Keys.Subtract) )
-            {
-                tecla_valida = true;
-            }
-            else if (e.Control && e.Alt && (e.KeyCode == Keys.Q || e.KeyCode == Keys.D2))
-                tecla_valida = true;
-            if (!tecla_valida)
-            {
-                e.SuppressKeyPress = true;
-            }
-        }
-        private void TXT_Nombres_KeyDown(object sender, KeyEventArgs e)
-        {
-            bool tecla_valida = false;
-            //Identificar si es una tecla válida
-            if ((e.KeyCode >= Keys.A) && (e.KeyCode <= Keys.Z) && (!e.Alt))
-                tecla_valida = true;
-            else if ((e.KeyCode == Keys.Subtract) ||
-                (e.KeyCode == Keys.Back) ||
-                (e.KeyCode == Keys.Delete) ||
-                (e.KeyCode == Keys.Left) ||
-                (e.KeyCode == Keys.Right) ||
-                ((e.KeyCode == Keys.OemMinus) && !e.Shift) ||
-                ((e.KeyCode == Keys.Oem4) && !e.Shift))
-                tecla_valida = true;
-            if (!tecla_valida)
-            {
-                e.SuppressKeyPress = true;
-            }
-        }
         private void TXTCI_KeyDown(object sender, KeyEventArgs e)
         {
             bool teclaValida = false;
@@ -406,6 +415,7 @@ namespace Eithan_System
                 e.SuppressKeyPress = true;
             }
         }
+
         private void TXTApellidoPaterno_KeyDown(object sender, KeyEventArgs e){
             bool teclaValida = false;
             //Identificar si es una tecla válida            
@@ -424,54 +434,8 @@ namespace Eithan_System
                 e.SuppressKeyPress = true;
             }
         }
-    
-        #endregion
 
-        #region Metodo para la Cámara
-        private void DetectarCamaras()
-        {
-            CaptureDevice = new FilterInfoCollection(FilterCategory.VideoInputDevice);//constructor            
-            FinalFrame = new VideoCaptureDevice();
-        }
-        private void IniciarCamara()
-        {
-            try
-            {
-                FinalFrame = new VideoCaptureDevice(CaptureDevice[0].MonikerString);// specified web cam and its filter moniker string
-                FinalFrame.NewFrame += new NewFrameEventHandler(FinalFrame_NewFrame);// click button event is fired, 
-                FinalFrame.Start();
-            }
-            catch { 
-                MessageBox.Show("No se detectó ninguna cámara web en el sistema.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-        void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs) // must be void so that it can be accessed everywhere.
-                                                                             // New Frame Event Args is an constructor of a class
-        {
-            PCB_Camara.Image = (Bitmap)eventArgs.Frame.Clone();// clone the bitmap
-           
-        }
-        private void ApagarCamara()
-        {
-            if (FinalFrame.IsRunning == true) FinalFrame.Stop();
-        }
 
-        #endregion
-
-        #region Eventos de la cámara
-        private void BTN_CamaraCapturar_Click(object sender, EventArgs e)
-        {
-            PCB_Fotografía.Image = PCB_Camara.Image;
-            TieneFoto = true;
-        }
-        private void BTN_CamaraAbrir_Click(object sender, EventArgs e)
-        {
-            if (OFDElegirImagen.ShowDialog() == DialogResult.OK)
-            {
-                PCB_Fotografía.ImageLocation = OFDElegirImagen.FileName;
-                TieneFoto = true;
-            }
-        }
         private void BTN_LimpiarFoto_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Está seguro que desea borrar la imagen?",
@@ -486,5 +450,57 @@ namespace Eithan_System
         }
         #endregion
 
+        #region Metodo para la Cámara
+        private void DetectarCamaras()
+        {
+            CaptureDevice = new FilterInfoCollection(FilterCategory.VideoInputDevice);//constructor            
+            FinalFrame = new VideoCaptureDevice();
+        }
+
+        private void IniciarCamara()
+        {
+            try
+            {
+                FinalFrame = new VideoCaptureDevice(CaptureDevice[0].MonikerString);// specified web cam and its filter moniker string
+                FinalFrame.NewFrame += new NewFrameEventHandler(FinalFrame_NewFrame);// click button event is fired, 
+                FinalFrame.Start();
+            }
+            catch { 
+                MessageBox.Show("No se detectó ninguna cámara web en el sistema.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs) // must be void so that it can be accessed everywhere.
+                                                                             // New Frame Event Args is an constructor of a class
+        {
+            PCB_Camara.Image = (Bitmap)eventArgs.Frame.Clone();// clone the bitmap
+           
+        }
+
+        private void ApagarCamara()
+        {
+            if (FinalFrame.IsRunning == true) FinalFrame.Stop();
+        }
+
+        private void BTN_CamaraCapturar_Click(object sender, EventArgs e)
+        {
+            PCB_Fotografía.Image = PCB_Camara.Image;
+            TieneFoto = true;
+        }
+
+        private void BTN_CamaraAbrir_Click(object sender, EventArgs e)
+        {
+            if (OFDElegirImagen.ShowDialog() == DialogResult.OK)
+            {
+                PCB_Fotografía.ImageLocation = OFDElegirImagen.FileName;
+                TieneFoto = true;
+            }
+        }
+        #endregion
+
+        private void PCB_Camara_LoadCompleted(object sender, AsyncCompletedEventArgs e)
+        {
+
+        }
     }
 }

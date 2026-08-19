@@ -26,7 +26,8 @@ namespace Eithan_System
         #endregion
 
         #region Eventos
-        private void timer1_Tick(object sender, EventArgs e)
+
+        /*private void timer1_Tick(object sender, EventArgs e)
         {
             LBLFecha.Text = DateTime.Now.ToString("F");
         }
@@ -43,7 +44,8 @@ namespace Eithan_System
         private void FRM_Fondo2_FormClosed(object sender, FormClosedEventArgs e)
         {
             timer1.Enabled = false;
-        }
+        }*/
+
         #endregion
     }
 }

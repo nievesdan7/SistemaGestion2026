@@ -96,33 +96,11 @@ namespace Eithan_System
             }
             return respuesta;
         }
-
         private void LimpiarCasillas()
         {
             SWB_Estado.Value = true;
             TXT_Nompro.Text = "";
         }
-
-        private void JalarCategoria() {
-            if (COMBOCategoria.DataSource == null)
-            {
-                try
-                {
-                    List<acatego> listaCategorias = categoria.Lista("");
-                    COMBOCategoria.DataSource = listaCategorias;
-                    COMBOCategoria.DisplayMember = "cacdnomcat";
-                    COMBOCategoria.ValueMember = "cacdcodcat";
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error al cargar las categorías: " + ex.Message,
-                                    "Error",
-                                    MessageBoxButtons.OK,
-                                    MessageBoxIcon.Error);
-                }
-            }
-        }
-
         private void JalarDatosCOMBOCategoria()
         {
             producto.papdcodpro = this.codProMod;
@@ -158,8 +136,6 @@ namespace Eithan_System
             TXT_Nompro.Text = producto.capdnompro;
             
 
-            if (COMBOCategoria.DataSource == null)
-            {
                 try
                 {
                     List<acatego> listaCategorias = categoria.Lista("");
@@ -175,8 +151,8 @@ namespace Eithan_System
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Error);
                 }
-            }
-            ;
+            
+            
             TXT_Marca.Text = producto.capdmarpro;
             TXT_Talla.Text = producto.capdtalpro;
             TXT_Modelo.Text = producto.capdmodpro;
@@ -191,7 +167,7 @@ namespace Eithan_System
 
 
 
-            if (producto.capdfotpro == "a")
+            if (producto.capdfotpro == " ")
             {
                 TieneFoto = false;
                 PCB_Fotografía.Image = Resources.NoImagen;
@@ -222,18 +198,18 @@ namespace Eithan_System
             else
             {
                 LimpiarCasillas();
+                JalarDatosCOMBOCategoria();
                 BTN_Grabar.Text = "&Guardar";
                 this.Text = "Registrar Producto";
                 GP_Panel_Producto.Text = "Registrar Producto";
                 TXT_Nompro.Focus();
+                
             }
-        }
-        
+        }       
         private void BTN_Salir_Click(object sender, EventArgs e)
         {
             Close();
         }
-
         private void FRM_Producto_Registrar_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("¿Está seguro que desea cerrar el formulario?",
@@ -249,7 +225,6 @@ namespace Eithan_System
                 ApagarCamara();
             }
         }
-
         private void BTN_Grabar_Click(object sender, EventArgs e)
         {
             if (VerificarIntegridad())
@@ -263,6 +238,18 @@ namespace Eithan_System
                     if (correlativo.ObtenerSiguiente())
                     {
                         producto.papdcodpro = correlativo.pxnctipcor + "-" + correlativo.cxncnumcor.ToString("D12");
+
+                        producto.capdpremin = 0.00m;
+                        producto.capdfeccre = DateTime.Now; 
+                        producto.capdfotpro = " ";
+                        producto.capdstopro = 0;
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se obtuvo correlativo",
+                                        "Error",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Warning);
                     }
                 }
                 else
@@ -280,6 +267,7 @@ namespace Eithan_System
                 producto.capdgenpro = TXT_Genero.Text;
                 producto.capdcolpro = TXT_Color.Text;
                 producto.capdpreven = (decimal)DOUBLE_PrecioVenta.Value;
+               
                 producto.capdcodbar = TXTCodigoBarras.Text;
                 producto.capddespro = TXT_Descripcion.Text;
                 producto.capdfecmod = DateTime.Now;
@@ -293,7 +281,7 @@ namespace Eithan_System
                 }
                 else
                 {
-                    producto.capdfotpro = "";
+                    producto.capdfotpro = " ";
                 }
 
 
@@ -345,8 +333,16 @@ namespace Eithan_System
                 }
             }
         }
+        private void BTN_AgregarCategoria_Click(object sender, EventArgs e)
+        {
+            FRM_GestionSubTablas a = new FRM_GestionSubTablas();
+            a.nombreTabla = COMBOCategoria.WatermarkText;
+            a.codTabMod = COMBOCategoria.SelectedValue.ToString();
+            a.ShowDialog();
+            JalarDatosCOMBOCategoria();
 
-       
+
+        }
         #endregion
 
         #region Metodos de la cámara
@@ -415,15 +411,6 @@ namespace Eithan_System
 
         #endregion
 
-        private void BTN_AgregarCategoria_Click(object sender, EventArgs e)
-        {
-            FRM_GestionSubTablas a = new FRM_GestionSubTablas();
-            a.nombreTabla = COMBOCategoria.WatermarkText;
-            a.codTabMod = COMBOCategoria.SelectedValue.ToString();
-            a.ShowDialog();
-            JalarDatosCOMBOCategoria();
-
-            
-        }
+        
     }
 }

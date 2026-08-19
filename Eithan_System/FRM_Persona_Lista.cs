@@ -18,6 +18,7 @@ namespace Eithan_System
         private aperson persona = new aperson();
         private List<aperson> lista_personas = new List<aperson>();
         #endregion
+
         #region Constructor
 
         public FRM_Persona_Lista()

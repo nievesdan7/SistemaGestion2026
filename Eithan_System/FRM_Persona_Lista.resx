@@ -117,17 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="EPN_Opciones.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="BTN_Reporte.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>148, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BTN_Reporte.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAACdNJREFUeF7tnAlwE+cVx82VAm0SIDOdQCCZaTF0oJQZDMYmLbYs+dRK4BCBD4x8
+        DQAACw0B7QfALAAACdNJREFUeF7tnAlwE+cVx82VAm0SIDOdQCCZaTF0oJQZDMYmLbYs+dRK4BCBD4x8
         EEPNHVLqEloTc5nCEAikgCklxhcRMAU3yJQyONimAw5kMi3Tg6PtUO6ENiTYcgP261v5s7qSn23J1u6q
         q+8/8xsYdvfb9/5/f/vtrpFCuLi4uLi4uLi4uLi4uLqWxWLpFxMTM0mn02Xgn4XIXqQcsVFER0fHs0O5
         /CUWgomZ/C8EfOCPBQUFfdlQXL1RWFjYADR0Ac6GGx4m+4qFDcnVU+GlZioG8SfC3J7AZ0lvhEHkI08I
@@ -172,13 +166,10 @@
         E7m4tK2QkP8Cov4dtvmNJEwAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="BTN_Modificar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>269, 17</value>
-  </metadata>
   <data name="BTN_Modificar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAACrBJREFUeF7tnAtUU/cdx/Gtna1Wz3oqVnfWCdo652lVhL5AiICQBN0aH7WbWtdq
+        DQAACw0B7QfALAAACrBJREFUeF7tnAtUU/cdx/Gtna1Wz3oqVnfWCdo652lVhL5AiICQBN0aH7WbWtdq
         q1UL7WpdKz7qazo77VY1aClaQKMOn2AVDSShx+de7elW1Lk50Eprq3MkWIHffv/wT3pz+QEhJLmXm/s9
         53NEcu/v/n7fb/73EZQwVapUqVKlSpUqVapUqVLVvAwGQ6f4+PhHx4wZ83P8cxmyBclFTBRxcXFJfFdV
         /hIPQcdN/hqBVvBJZmZmR15KVVs0YsSILmjoLFwNl0UmtxYDL6nKV+GpZjQG8Rlhri+oq6QtwiAWIrWE
@@ -227,13 +218,10 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="BTN_Registrar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>400, 17</value>
-  </metadata>
   <data name="BTN_Registrar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAACOdJREFUeF7tnHtwVFcdxwOh9qG1FP6RtOCoTfrA2LE8U8Vsdjfv3Q1RlxAeVkRb
+        DQAACw0B7QfALAAACOdJREFUeF7tnHtwVFcdxwOh9qG1FP6RtOCoTfrA2LE8U8Vsdjfv3Q1RlxAeVkRb
         ECh9qE2T2EB4C9OaVltIxBBosumC2iRkN6VIIBsc5OE42ukfgdoZ5N3iFGt2mTbJz9/ZnGzv3v1ls6/s
         3dx7vjOfgZncc87v9/3uua+FJAkJCQkJCQkJCQkJCQkFl9VqTdbr9Y9kZWUtxT+rkV1II2Kn0Ol0uXyo
         UKzEQzBzk/+DQBj8s6qqajyfSigazZgx4xY09AncDedlJoeLlU8pFKnwVDMHg3iXMDcSxC6JRhhEGdJH
@@ -274,46 +262,34 @@
         GiqV7cZ0PjSGSkr6P98TvZXT+RZ6AAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="EPN_Filtrar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>526, 17</value>
+  <metadata name="CMSMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>172, 17</value>
   </metadata>
-  <metadata name="BTN_Buscar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>637, 17</value>
-  </metadata>
-  <metadata name="TXT_Filtrar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>752, 17</value>
-  </metadata>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Column9.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="Column8.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column9.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Column7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="CMSMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>860, 17</value>
+  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
-  <metadata name="IIN_Filas.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 54</value>
+  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
 </root>

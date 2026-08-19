@@ -195,7 +195,7 @@ namespace Eithan_System
         {
             if (VerificarIntegridad())
             {
-              
+
 
                 if (!this.modificar)
                 {
@@ -210,29 +210,17 @@ namespace Eithan_System
                 {
                     usuario.pauscodusu = this.codUsuMod;
                 }
-                
+
                 usuario.causestusu = SWB_Estado.Value;
                 usuario.causnomlog = TXT_LoginUsuario.Text;
 
-                if (!modificar) {
+                if (!modificar) { 
                     usuario.causactpas = true;
-
-                    usuario.causmashue = DPFPHuellas.EnrolledFingerMask;
-
-                    usuario.causmashue = 0;
-                    usuario.causnumhu1 = 0;
-                    usuario.causcodhu1 = "";
-                    usuario.causnumhu2 = 0;
-                    usuario.causcodhu2 = "";
-                    usuario.causnumhu3 = 0;
-                    usuario.causcodhu3 = "";
-                    usuario.causnumhu4 = 0;
-                    usuario.causcodhu4 = "";
-
-                    usuario.fauscodper = persona.papscodper;
-
                 }
-               
+                usuario.causmashue = DPFPHuellas.EnrolledFingerMask;
+                usuario.fauscodper = persona.papscodper;
+
+
 
 
                 if (!this.modificar)

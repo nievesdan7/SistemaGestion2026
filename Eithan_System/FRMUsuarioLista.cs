@@ -208,5 +208,37 @@ namespace Eithan_System
 
         #endregion
 
+        private void BTN_Password_Click(object sender, EventArgs e)
+        {
+            if (DTG_Lista.SelectedRows.Count > 0)
+            {
+                if (MessageBox.Show("¿Desea cambiar la contraseña del usuario" +
+                                   DTG_Lista[3, DTG_Lista.SelectedRows[0].Index].Value.ToString() + "?",
+                                   "Confirmación",
+                                   MessageBoxButtons.YesNo,
+                                   MessageBoxIcon.Question,
+                                   MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                {
+                    ausuario.pauscodusu = DTG_Lista[0, DTG_Lista.SelectedRows[0].Index].Value.ToString();
+                    ausuario.ObtenerDatos();
+                    ausuario.causactpas = true;
+                    if (ausuario.Modificar())
+                    {
+                        MessageBox.Show("Password reseteado correctamente.",
+                                        "Éxito",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al resetear la contraseña.",
+                                        "Error",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Error);
+                    }
+                }
+
+            }
+        }
     }
 }

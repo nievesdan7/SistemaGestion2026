@@ -89,7 +89,7 @@
             this.DTG_Lista.DefaultCellStyle = dataGridViewCellStyle5;
             this.DTG_Lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DTG_Lista.EnableHeadersVisualStyles = false;
-            this.DTG_Lista.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.DTG_Lista.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(157)))));
             this.DTG_Lista.Location = new System.Drawing.Point(0, 99);
             this.DTG_Lista.MultiSelect = false;
             this.DTG_Lista.Name = "DTG_Lista";
@@ -206,15 +206,12 @@
             this.EPN_Filtrar.Size = new System.Drawing.Size(811, 99);
             this.EPN_Filtrar.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.EPN_Filtrar.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.EPN_Filtrar.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.EPN_Filtrar.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.EPN_Filtrar.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
             this.EPN_Filtrar.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
             this.EPN_Filtrar.Style.GradientAngle = 90;
             this.EPN_Filtrar.TabIndex = 14;
             this.EPN_Filtrar.TitleStyle.Alignment = System.Drawing.StringAlignment.Center;
             this.EPN_Filtrar.TitleStyle.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.EPN_Filtrar.TitleStyle.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.EPN_Filtrar.TitleStyle.Border = DevComponents.DotNetBar.eBorderType.RaisedInner;
             this.EPN_Filtrar.TitleStyle.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
             this.EPN_Filtrar.TitleStyle.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
@@ -266,12 +263,15 @@
             // 
             // TXT_Filtrar
             // 
+            this.TXT_Filtrar.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.TXT_Filtrar.Border.Class = "TextBoxBorder";
             this.TXT_Filtrar.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.TXT_Filtrar.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.TXT_Filtrar.DisabledBackColor = System.Drawing.Color.White;
+            this.TXT_Filtrar.ForeColor = System.Drawing.Color.Black;
             this.TXT_Filtrar.Location = new System.Drawing.Point(92, 50);
             this.TXT_Filtrar.Name = "TXT_Filtrar";
             this.TXT_Filtrar.PreventEnterBeep = true;

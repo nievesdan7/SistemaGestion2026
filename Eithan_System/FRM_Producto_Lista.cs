@@ -11,8 +11,9 @@ using System.Windows.Forms;
 
 namespace Eithan_System
 {
-    public partial class FRM_Producto_Buscar : DevComponents.DotNetBar.Office2007Form
+    public partial class FRM_Producto_Lista : DevComponents.DotNetBar.Office2007Form
     {
+
         #region Variables
         public aproduc producto = new aproduc();
         private List<aproduc> lista_productos = new List<aproduc>();
@@ -20,7 +21,7 @@ namespace Eithan_System
         #endregion
 
         #region Constructor
-        public FRM_Producto_Buscar()
+        public FRM_Producto_Lista()
         {
             InitializeComponent();
         }
@@ -56,7 +57,7 @@ namespace Eithan_System
                 DTG_Lista[1, DTG_Lista.Rows.Count - 1].Value = a.capdestpro;
                 DTG_Lista[2, DTG_Lista.Rows.Count - 1].Value = a.capdnompro;
                 DTG_Lista[3, DTG_Lista.Rows.Count - 1].Value = a.capdcodcat;
-                
+
                 DTG_Lista[4, DTG_Lista.Rows.Count - 1].Value = a.capdmodpro;
                 DTG_Lista[5, DTG_Lista.Rows.Count - 1].Value = a.capdmarpro;
                 DTG_Lista[6, DTG_Lista.Rows.Count - 1].Value = a.capdmatpro;
@@ -65,18 +66,18 @@ namespace Eithan_System
                 DTG_Lista[9, DTG_Lista.Rows.Count - 1].Value = a.capdpreven;
                 DTG_Lista[10, DTG_Lista.Rows.Count - 1].Value = a.capdfeccre;
                 DTG_Lista[11, DTG_Lista.Rows.Count - 1].Value = a.capdfecmod;
-                
+
             }
 
         }
         #endregion
 
         #region Eventos
-        private void FRM_Producto_Buscar_Load(object sender, EventArgs e)
+        private void FRM_Producto_Lista_Load(object sender, EventArgs e)
         {
             ActualizarGrid();
         }
-        private void BTN_AgregarProducto_Click(object sender, EventArgs e)
+        private void BTN_Modificar_Click(object sender, EventArgs e)
         {
             FRM_Producto_Registrar a = new FRM_Producto_Registrar();
             a.modificar = true;
@@ -87,7 +88,18 @@ namespace Eithan_System
                 ActualizarGrid();
             }
         }
-
+        private void BTN_Registrar_Click(object sender, EventArgs e)
+        {
+            FRM_Producto_Registrar a = new FRM_Producto_Registrar();
+            a.modificar = false;
+            a.ShowDialog();
+            if (a.actualizar)
+            {
+                ActualizarGrid();
+            }
+        }
         #endregion
+
+
     }
 }

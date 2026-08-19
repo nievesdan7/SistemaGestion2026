@@ -53,7 +53,6 @@ namespace Eithan_System
 
         #endregion
 
-        #region Eventos
         private void BTNPassword_Click(object sender, EventArgs e)
         {
             if (TXTPassword.PasswordChar == '*')
@@ -80,8 +79,27 @@ namespace Eithan_System
 
         private void TXTPassword_TextChanged(object sender, EventArgs e)
         {
-            NivelSeguridad = MetodosGenerales.Puntuar_Clave(TXTPassword.Text);
-            MetodosGenerales.Validar_Clave(NivelSeguridad, LBLMensaje);
+            NivelSeguridad = MetodosGenerales.ValidarPassword(TXTPassword.Text);
+            if (NivelSeguridad == 0)
+            { 
+                LBLMensaje.Text = "Password inadmisible";
+                LBLMensaje.BackColor = Color.Salmon;
+            }
+            else if (NivelSeguridad == 1)
+            {
+                LBLMensaje.Text = "Seguridad Baja";
+                LBLMensaje.BackColor = Color.SandyBrown;
+            }
+            else if (NivelSeguridad == 2)
+            {
+                LBLMensaje.Text = "Seguridad Media";
+                LBLMensaje.BackColor = Color.LightYellow;
+            }
+            else if (NivelSeguridad == 3)
+            {
+                LBLMensaje.Text = "Seguridad Alta";
+                LBLMensaje.BackColor = Color.LightGreen;
+            }
         }
 
         private void FRMModificar_Password_Load(object sender, EventArgs e)
@@ -93,7 +111,7 @@ namespace Eithan_System
         {
             if (TXTPassword.Text == TXTConfirmarPassword.Text)
             {
-                if (NivelSeguridad == 4)
+                if (NivelSeguridad == 3)
                 {
                     usuario.causactpas = false;
                     usuario.causpasswo = TXTPassword.Text;
@@ -125,6 +143,5 @@ namespace Eithan_System
             TextBoxX a = (TextBoxX)sender;
             a.SelectAll();
         }
-        #endregion
     }
 }

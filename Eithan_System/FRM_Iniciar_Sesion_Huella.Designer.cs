@@ -112,7 +112,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Eithan_System.Properties.Resources.icons8_huella_dactilar_100;
+            this.pictureBox1.Image = global::Eithan_System.Properties.Resources.icons8_huella_dactilar_100__1_;
             this.pictureBox1.Location = new System.Drawing.Point(431, 23);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 128);

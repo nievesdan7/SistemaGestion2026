@@ -261,82 +261,82 @@ namespace CapaRN
                 } 
             }
             public bool Grabar2()
-        {
-            if (this.VerificarExistencia())
             {
-                return false;
+                if (this.VerificarExistencia())
+                {
+                    return false;
+                }
+                else
+                {
+                    this.Conexion.Conectar();
+                    string sql = "insert into aproduc (" +
+                                                   
+                                                       "capdpreven," +
+                                                   
+                                                       "capdestpro," +
+                                                   
+                                                       "capdfecmod," +
+                                                       "capdmatpro," +
+                                                       "capdcolpro," +
+                                                       "papdcodpro," +
+                                                       "capdtalpro," +
+                                                       "capddespro," +
+                                                       "capdfotpro," +
+                                                       "capdgenpro," +
+                                                       "capdcodcat," +
+                                                       "capdcodbar," +
+                                                       "capdmodpro," +
+                                                       "capdnompro," +
+                                                       "capdmarpro" +
+                                                       ") " +
+                                 "values (" +
+                                      
+                                          "@capdpreven," +
+                                      
+                                          "@capdestpro," +
+                                      
+                                          "@capdfecmod," +
+                                          "@capdmatpro," +
+                                          "@capdcolpro," +
+                                          "@papdcodpro," +
+                                          "@capdtalpro," +
+                                          "@capddespro," +
+                                          "@capdfotpro," +
+                                          "@capdgenpro," +
+                                          "@capdcodcat," +
+                                          "@capdcodbar," +
+                                          "@capdmodpro," +
+                                          "@capdnompro," +
+                                          "@capdmarpro" +
+                                                       ")";
+
+                    this.Conexion.PrepararComando(sql);
+
+               
+                    this.Conexion.AsignarParametroDecimal("@capdpreven", this._capdpreven);
+               
+                    this.Conexion.AsignarParametroLogico("@capdestpro", this._capdestpro);
+               
+                    this.Conexion.AsignarParametroFechaHora("@capdfecmod", this._capdfecmod);
+                    this.Conexion.AsignarParametroCadena("@capdmatpro", this._capdmatpro);
+                    this.Conexion.AsignarParametroCadena("@capdcolpro", this._capdcolpro);
+                    this.Conexion.AsignarParametroCadena("@papdcodpro", this._papdcodpro);
+                    this.Conexion.AsignarParametroCadena("@capdtalpro", this._capdtalpro);
+                    this.Conexion.AsignarParametroCadena("@capddespro", this._capddespro);
+                    this.Conexion.AsignarParametroCadena("@capdfotpro", this._capdfotpro);
+                    this.Conexion.AsignarParametroCadena("@capdgenpro", this._capdgenpro);
+                    this.Conexion.AsignarParametroCadena("@capdcodcat", this._capdcodcat);
+                    this.Conexion.AsignarParametroCadena("@capdcodbar", this._capdcodbar);
+                    this.Conexion.AsignarParametroCadena("@capdmodpro", this._capdmodpro);
+                    this.Conexion.AsignarParametroCadena("@capdnompro", this._capdnompro);
+                    this.Conexion.AsignarParametroCadena("@capdmarpro", this._capdmarpro);
+
+                    this.Conexion.EjecutarTransaccion();
+                    this.Conexion.Desconectar();
+
+                    return true;
+                }
             }
-            else
-            {
-                this.Conexion.Conectar();
-                string sql = "insert into aproduc (" +
-                                                   
-                                                   "capdpreven," +
-                                                   
-                                                   "capdestpro," +
-                                                   
-                                                   "capdfecmod," +
-                                                   "capdmatpro," +
-                                                   "capdcolpro," +
-                                                   "papdcodpro," +
-                                                   "capdtalpro," +
-                                                   "capddespro," +
-                                                   "capdfotpro," +
-                                                   "capdgenpro," +
-                                                   "capdcodcat," +
-                                                   "capdcodbar," +
-                                                   "capdmodpro," +
-                                                   "capdnompro," +
-                                                   "capdmarpro" +
-                                                   ") " +
-                             "values (" +
-                                      
-                                      "@capdpreven," +
-                                      
-                                      "@capdestpro," +
-                                      
-                                      "@capdfecmod," +
-                                      "@capdmatpro," +
-                                      "@capdcolpro," +
-                                      "@papdcodpro," +
-                                      "@capdtalpro," +
-                                      "@capddespro," +
-                                      "@capdfotpro," +
-                                      "@capdgenpro," +
-                                      "@capdcodcat," +
-                                      "@capdcodbar," +
-                                      "@capdmodpro," +
-                                      "@capdnompro," +
-                                      "@capdmarpro" +
-                                                   ")";
-
-                this.Conexion.PrepararComando(sql);
-
-               
-                this.Conexion.AsignarParametroDecimal("@capdpreven", this._capdpreven);
-               
-                this.Conexion.AsignarParametroLogico("@capdestpro", this._capdestpro);
-               
-                this.Conexion.AsignarParametroFechaHora("@capdfecmod", this._capdfecmod);
-                this.Conexion.AsignarParametroCadena("@capdmatpro", this._capdmatpro);
-                this.Conexion.AsignarParametroCadena("@capdcolpro", this._capdcolpro);
-                this.Conexion.AsignarParametroCadena("@papdcodpro", this._papdcodpro);
-                this.Conexion.AsignarParametroCadena("@capdtalpro", this._capdtalpro);
-                this.Conexion.AsignarParametroCadena("@capddespro", this._capddespro);
-                this.Conexion.AsignarParametroCadena("@capdfotpro", this._capdfotpro);
-                this.Conexion.AsignarParametroCadena("@capdgenpro", this._capdgenpro);
-                this.Conexion.AsignarParametroCadena("@capdcodcat", this._capdcodcat);
-                this.Conexion.AsignarParametroCadena("@capdcodbar", this._capdcodbar);
-                this.Conexion.AsignarParametroCadena("@capdmodpro", this._capdmodpro);
-                this.Conexion.AsignarParametroCadena("@capdnompro", this._capdnompro);
-                this.Conexion.AsignarParametroCadena("@capdmarpro", this._capdmarpro);
-
-                this.Conexion.EjecutarTransaccion();
-                this.Conexion.Desconectar();
-
-                return true;
-            }
-        }
             public bool Grabar()
             { 
                 if (this.VerificarExistencia())
@@ -413,7 +413,7 @@ namespace CapaRN
 
                     return true;
                 } 
-            } 
+            }
             public bool Modificar2()
             { 
                 if (!this.VerificarExistencia())
@@ -472,130 +472,130 @@ namespace CapaRN
                 }
             }
             public bool Modificar()
-        {
-            if (!this.VerificarExistencia())
             {
-                return false;
+                if (!this.VerificarExistencia())
+                {
+                    return false;
+                }
+                else
+                {
+                    this.Conexion.Conectar();
+                    string sql = "update aproduc set " +
+                                                     "capdstopro = @capdstopro, " +
+                                                     "capdpreven = @capdpreven, " +
+                                                     "capdpremin = @capdpremin, " +
+                                                     "capdestpro = @capdestpro, " +
+                                                     "capdfeccre = @capdfeccre, " +
+                                                     "capdfecmod = @capdfecmod, " +
+                                                     "capdmatpro = @capdmatpro, " +
+                                                     "capdcolpro = @capdcolpro, " +
+                                                     "capdtalpro = @capdtalpro, " +
+                                                     "capddespro = @capddespro, " +
+                                                     "capdfotpro = @capdfotpro, " +
+                                                     "capdgenpro = @capdgenpro, " +
+                                                     "capdcodcat = @capdcodcat, " +
+                                                     "capdcodbar = @capdcodbar, " +
+                                                     "capdmodpro = @capdmodpro, " +
+                                                     "capdnompro = @capdnompro, " +
+                                                     "capdmarpro = @capdmarpro" +
+                                 " where " +
+                                        "papdcodpro = @papdcodpro";
+
+                    this.Conexion.PrepararComando(sql);
+
+                    this.Conexion.AsignarParametroEntero("@capdstopro", this._capdstopro);
+                    this.Conexion.AsignarParametroDecimal("@capdpreven", this._capdpreven);
+                    this.Conexion.AsignarParametroDecimal("@capdpremin", this._capdpremin);
+                    this.Conexion.AsignarParametroLogico("@capdestpro", this._capdestpro);
+                    this.Conexion.AsignarParametroFechaHora("@capdfeccre", this._capdfeccre);
+                    this.Conexion.AsignarParametroFechaHora("@capdfecmod", this._capdfecmod);
+                    this.Conexion.AsignarParametroCadena("@capdmatpro", this._capdmatpro);
+                    this.Conexion.AsignarParametroCadena("@capdcolpro", this._capdcolpro);
+                    this.Conexion.AsignarParametroCadena("@papdcodpro", this._papdcodpro);
+                    this.Conexion.AsignarParametroCadena("@capdtalpro", this._capdtalpro);
+                    this.Conexion.AsignarParametroCadena("@capddespro", this._capddespro);
+                    this.Conexion.AsignarParametroCadena("@capdfotpro", this._capdfotpro);
+                    this.Conexion.AsignarParametroCadena("@capdgenpro", this._capdgenpro);
+                    this.Conexion.AsignarParametroCadena("@capdcodcat", this._capdcodcat);
+                    this.Conexion.AsignarParametroCadena("@capdcodbar", this._capdcodbar);
+                    this.Conexion.AsignarParametroCadena("@capdmodpro", this._capdmodpro);
+                    this.Conexion.AsignarParametroCadena("@capdnompro", this._capdnompro);
+                    this.Conexion.AsignarParametroCadena("@capdmarpro", this._capdmarpro);
+
+                    this.Conexion.EjecutarTransaccion();
+                    this.Conexion.Desconectar();
+
+                    return true;
+                }
             }
-            else
-            {
-                this.Conexion.Conectar();
-                string sql = "update aproduc set " +
-                                                 "capdstopro = @capdstopro, " +
-                                                 "capdpreven = @capdpreven, " +
-                                                 "capdpremin = @capdpremin, " +
-                                                 "capdestpro = @capdestpro, " +
-                                                 "capdfeccre = @capdfeccre, " +
-                                                 "capdfecmod = @capdfecmod, " +
-                                                 "capdmatpro = @capdmatpro, " +
-                                                 "capdcolpro = @capdcolpro, " +
-                                                 "capdtalpro = @capdtalpro, " +
-                                                 "capddespro = @capddespro, " +
-                                                 "capdfotpro = @capdfotpro, " +
-                                                 "capdgenpro = @capdgenpro, " +
-                                                 "capdcodcat = @capdcodcat, " +
-                                                 "capdcodbar = @capdcodbar, " +
-                                                 "capdmodpro = @capdmodpro, " +
-                                                 "capdnompro = @capdnompro, " +
-                                                 "capdmarpro = @capdmarpro" +
-                             " where " +
-                                    "papdcodpro = @papdcodpro";
-
-                this.Conexion.PrepararComando(sql);
-
-                this.Conexion.AsignarParametroEntero("@capdstopro", this._capdstopro);
-                this.Conexion.AsignarParametroDecimal("@capdpreven", this._capdpreven);
-                this.Conexion.AsignarParametroDecimal("@capdpremin", this._capdpremin);
-                this.Conexion.AsignarParametroLogico("@capdestpro", this._capdestpro);
-                this.Conexion.AsignarParametroFechaHora("@capdfeccre", this._capdfeccre);
-                this.Conexion.AsignarParametroFechaHora("@capdfecmod", this._capdfecmod);
-                this.Conexion.AsignarParametroCadena("@capdmatpro", this._capdmatpro);
-                this.Conexion.AsignarParametroCadena("@capdcolpro", this._capdcolpro);
-                this.Conexion.AsignarParametroCadena("@papdcodpro", this._papdcodpro);
-                this.Conexion.AsignarParametroCadena("@capdtalpro", this._capdtalpro);
-                this.Conexion.AsignarParametroCadena("@capddespro", this._capddespro);
-                this.Conexion.AsignarParametroCadena("@capdfotpro", this._capdfotpro);
-                this.Conexion.AsignarParametroCadena("@capdgenpro", this._capdgenpro);
-                this.Conexion.AsignarParametroCadena("@capdcodcat", this._capdcodcat);
-                this.Conexion.AsignarParametroCadena("@capdcodbar", this._capdcodbar);
-                this.Conexion.AsignarParametroCadena("@capdmodpro", this._capdmodpro);
-                this.Conexion.AsignarParametroCadena("@capdnompro", this._capdnompro);
-                this.Conexion.AsignarParametroCadena("@capdmarpro", this._capdmarpro);
-
-                this.Conexion.EjecutarTransaccion();
-                this.Conexion.Desconectar();
-
-                return true;
-            }
-        }
             public List<aproduc> Lista(string where)
             { 
                 List<aproduc> ListaResultado = new List<aproduc>();
                 this.Conexion.Conectar();
 
 
-            string sql = "select " +
-                 "p.capdstopro," +
-                 "p.capdpreven," +
-                 "p.capdpremin," +
-                 "p.capdestpro," +
-                 "p.capdfeccre," +
-                 "p.capdfecmod," +
-                 "p.capdmatpro," +
-                 "p.capdcolpro," +
-                 "p.papdcodpro," +
-                 "p.capdtalpro," +
-                 "p.capddespro," +
-                 "p.capdfotpro," +
-                 "p.capdgenpro," +
-                 "c.cacdnomcat as capdcodcat," +
-                 "p.capdcodbar," +
-                 "p.capdmodpro," +
-                 "p.capdnompro," +
-                 "p.capdmarpro " +
-                     "from aproduc p " +
-                     "left join acatego c on p.capdcodcat = c.cacdcodcat ";
+                string sql = "select " +
+                     "p.capdstopro," +
+                     "p.capdpreven," +
+                     "p.capdpremin," +
+                     "p.capdestpro," +
+                     "p.capdfeccre," +
+                     "p.capdfecmod," +
+                     "p.capdmatpro," +
+                     "p.capdcolpro," +
+                     "p.papdcodpro," +
+                     "p.capdtalpro," +
+                     "p.capddespro," +
+                     "p.capdfotpro," +
+                     "p.capdgenpro," +
+                     "c.cacdnomcat as capdcodcat," +
+                     "p.capdcodbar," +
+                     "p.capdmodpro," +
+                     "p.capdnompro," +
+                     "p.capdmarpro " +
+                         "from aproduc p " +
+                         "left join acatego c on p.capdcodcat = c.cacdcodcat ";
                         
 
-            if (where.Replace(" ", "") != "")
-                {
-                    sql+= "where " + where;
-                }
-
- 
-                this.Conexion.PrepararComando(sql); 
-                DbDataReader ResultadoConsulta = Conexion.EjecutarConsulta();
-
-                if (ResultadoConsulta!=null)
-                {
-                    while (ResultadoConsulta.Read())
+                if (where.Replace(" ", "") != "")
                     {
-                          aproduc Auxiliar = new aproduc();
-                          Auxiliar.capdstopro = ResultadoConsulta.GetInt32(0);
-                          Auxiliar.capdpreven = ResultadoConsulta.GetDecimal(1);
-                          Auxiliar.capdpremin = ResultadoConsulta.GetDecimal(2);
-                          Auxiliar.capdestpro = ResultadoConsulta.GetBoolean(3);
-                          Auxiliar.capdfeccre = ResultadoConsulta.GetDateTime(4);
-                          Auxiliar.capdfecmod = ResultadoConsulta.GetDateTime(5);
-                          Auxiliar.capdmatpro = ResultadoConsulta.GetString(6);
-                          Auxiliar.capdcolpro = ResultadoConsulta.GetString(7);
-                          Auxiliar.papdcodpro = ResultadoConsulta.GetString(8);
-                          Auxiliar.capdtalpro = ResultadoConsulta.GetString(9);
-                          Auxiliar.capddespro = ResultadoConsulta.GetString(10);
-                          Auxiliar.capdfotpro = ResultadoConsulta.GetString(11);
-                          Auxiliar.capdgenpro = ResultadoConsulta.GetString(12);
-                          Auxiliar.capdcodcat = ResultadoConsulta.GetString(13);
-                          Auxiliar.capdcodbar = ResultadoConsulta.GetString(14);
-                          Auxiliar.capdmodpro = ResultadoConsulta.GetString(15);
-                          Auxiliar.capdnompro = ResultadoConsulta.GetString(16);
-                          Auxiliar.capdmarpro = ResultadoConsulta.GetString(17);
-                          ListaResultado.Add(Auxiliar);
+                        sql+= "where " + where;
                     }
 
-                }
-                this.Conexion.Desconectar();
-                return ListaResultado;
-            } 
+ 
+                    this.Conexion.PrepararComando(sql); 
+                    DbDataReader ResultadoConsulta = Conexion.EjecutarConsulta();
+
+                    if (ResultadoConsulta!=null)
+                    {
+                        while (ResultadoConsulta.Read())
+                        {
+                              aproduc Auxiliar = new aproduc();
+                              Auxiliar.capdstopro = ResultadoConsulta.GetInt32(0);
+                              Auxiliar.capdpreven = ResultadoConsulta.GetDecimal(1);
+                              Auxiliar.capdpremin = ResultadoConsulta.GetDecimal(2);
+                              Auxiliar.capdestpro = ResultadoConsulta.GetBoolean(3);
+                              Auxiliar.capdfeccre = ResultadoConsulta.GetDateTime(4);
+                              Auxiliar.capdfecmod = ResultadoConsulta.GetDateTime(5);
+                              Auxiliar.capdmatpro = ResultadoConsulta.GetString(6);
+                              Auxiliar.capdcolpro = ResultadoConsulta.GetString(7);
+                              Auxiliar.papdcodpro = ResultadoConsulta.GetString(8);
+                              Auxiliar.capdtalpro = ResultadoConsulta.GetString(9);
+                              Auxiliar.capddespro = ResultadoConsulta.GetString(10);
+                              Auxiliar.capdfotpro = ResultadoConsulta.GetString(11);
+                              Auxiliar.capdgenpro = ResultadoConsulta.GetString(12);
+                              Auxiliar.capdcodcat = ResultadoConsulta.GetString(13);
+                              Auxiliar.capdcodbar = ResultadoConsulta.GetString(14);
+                              Auxiliar.capdmodpro = ResultadoConsulta.GetString(15);
+                              Auxiliar.capdnompro = ResultadoConsulta.GetString(16);
+                              Auxiliar.capdmarpro = ResultadoConsulta.GetString(17);
+                              ListaResultado.Add(Auxiliar);
+                        }
+
+                    }
+                    this.Conexion.Desconectar();
+                    return ListaResultado;
+                } 
         #endregion 
 
 	}

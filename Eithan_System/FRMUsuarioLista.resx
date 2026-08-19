@@ -136,7 +136,7 @@
   <data name="BTN_Password.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAACqxJREFUeF7tnQtwVNUZx68JFBQoM9SOpuZ1791k924gQEIKITEBSkhINgo2WRim
+        DAAACwwBP0AiyAAACqxJREFUeF7tnQtwVNUZx68JFBQoM9SOpuZ1791k924gQEIKITEBSkhINgo2WRim
         wogzoQ8oIlApdixRIY7WktpAeAQWEgyQUkELUWxHpqK1tg5ThimPUVoofQiVR6SA8vr6fbtnN/fePUk2
         ZLN3c/f+Z36zy+453/2+/7n3nHN3kyBYsmTJkiVLlixZsmTJUjQKSmwDwC1PBLf0PPI6cgy5AG7xOsyQ
         gI88gXW3dKeCmXIGmrkGuag1NwTc4gEWxlJ3BZVSMp7hryK3uOaGjHUVdFtQKc7Fs7eNb2g3sa6C0AWF
@@ -188,7 +188,7 @@
   <data name="BTN_Reporte.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAACQtJREFUeF7tnH9M1Ocdx0mbba5tsjWp6dHNjkNYV6MxZmvXJevoMKxsVsnSHL/8
+        DAAACwwBP0AiyAAACQtJREFUeF7tnH9M1Ocdx0mbba5tsjWp6dHNjkNYV6MxZmvXJevoMKxsVsnSHL/8
         ASI9GrgdxGm31DZnsdM6o6jtnL+2mmk3Rzr1yNrUbB1GqAIibtquKJWTbRX3R5mUTaj347PP8+U5ee57
         H4779X2Ofu95Ja9A+P76PO/P9/vccwchQ6FQKBQKhUKhUCgUCoVCoZhOQGHO56Bk9mNQYt0AxdZjUJz9
         PjqE39+Ekmygnf0YP1wRL2DLegBD36mFTYYcwWJrKz+NIlagdNZ9GPwBDNIXFmxMqqcgZvDOXRrXHU+p
@@ -233,7 +233,7 @@
   <data name="BTN_Modificar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAACUpJREFUeF7tnH1wVNUZxhdUwEK1OFI2CDUbtCozjNNpDXY6NsqMQa0k/ScJxZnC
+        DAAACwwBP0AiyAAACUpJREFUeF7tnH1wVNUZxhdUwEK1OFI2CDUbtCozjNNpDXY6NsqMQa0k/ScJxZnC
         9A8643QKJlCZfsxqoNBpCx2p5UOYlgKtEJGwAXGixXzs5gNIk5EUDKVmoYLgdEyJ0ASze/fte27eTe6e
         ++5mv+/N3fvM/CaZ3XPPfd7nfNyza8Rhy5YtW7Zs2bJly5YtW7Zs2bJly5aZBE/dNxkq5j4OFa51UO46
         DOUFHyB9+PsQVBQAz9zH6XJbyQrK8h/A0LeoYbMhx6Dc1UDd2EpUsGTOLAx+NwYZ1AWbEPYqSFg4c59L
@@ -279,7 +279,7 @@
   <data name="BTN_Registrar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAB8NJREFUeF7tnGtsFFUUxxuI8ZkYEgi7INItoII2fkAwfjA8EnwF9FNbAokQP9SE
+        DAAACwwBP0AiyAAAB8NJREFUeF7tnGtsFFUUxxuI8ZkYEgi7INItoII2fkAwfjA8EnwF9FNbAokQP9SE
         GGuIUSKYYlH4BMZikABRIqjQKLAFTUjQYnfp2xJBoKXSbVVeH2iokLZ2H8dzp6ft7N2z253dnRmYub/k
         F5r2zsw5/ztz9+62IU+hUCgUCoVCoVAoFAqFQqG4k4CXZt4LJTMWQolvExT7jkBxwQW0B78ehJIC4J2x
         kA5XZAoU5T+OoVdqYbMhp7DYV0OnURgFlk+bgsHvxSAjCcEaUj0FhsE7d2VGdzynegrSB4ryxmPw29gg
